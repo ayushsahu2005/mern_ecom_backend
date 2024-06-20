@@ -69,6 +69,7 @@ const  showMenProduct=async(req, res)=>{
     const response= await productModel.find({category:"Male"});
     res.status(200).json({product:response});
 }
+// this is another comment for system
 
 const  showWoMenProduct=async(req, res)=>{
     const response= await productModel.find({category:"Female"});
