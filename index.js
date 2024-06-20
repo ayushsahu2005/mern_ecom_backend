@@ -1,9 +1,11 @@
+// importing and defing modules
 const express= require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const app = express();
 const bodyparser = require('body-parser')
 
+// managing routes
 const adminRouter= require("./routes/adminRoutes");
 const productRouter= require("./routes/productRoutes");
 const paymentRoute= require("./routes/payment");
@@ -25,7 +27,7 @@ app.use("/user", userRouter);
 
 app.get("/", (req, res)=>{
 
-     res.send("Welcome to Node JS")
+     res.send("Welcome to MERN E-COMMERCE Website ")
 
 })
 
